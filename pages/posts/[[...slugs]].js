@@ -79,4 +79,12 @@ export async function getStaticProps(Context) {
 }
 
 
+export async function getStaticPaths() {
+
+    return {
+        paths: ['/posts/an-angel-dog-shows-up-in-a-friends-photo-of-a-woman-spreading-the-ashes-of-her-dog/'],
+        fallback: true, // can also be true or 'blocking'
+    }
+}
+
 
