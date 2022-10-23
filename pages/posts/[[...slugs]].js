@@ -82,9 +82,7 @@ export async function getStaticProps(Context) {
 export async function getStaticPaths() {
 
     return {
-        paths,
+        paths: ['/'],
         fallback: true, // can also be true or 'blocking'
     }
 }
-
-
