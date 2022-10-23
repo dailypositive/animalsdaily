@@ -7,7 +7,7 @@ export default function Comp({ metaTags }) {
  useEffect(() => {
     setTimeout(() => {
 
-        location.href = 'https://dailypositive24.com/' + url
+        location.href = 'https://animalsdaily.net/' + url
     }, 1000);
  }, [])
  
@@ -54,7 +54,7 @@ export async function getStaticProps(Context) {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-            url: 'https://dailypositive24.com/' + slugString
+            url: 'https://animalsdaily.net/' + slugString
         })
     })
 
